@@ -1,0 +1,401 @@
+/*
+ * vwelch.css
+ *
+ * CSS for vwelch.com
+ */
+
+body {
+    background-color:#C0C0C0;
+}
+
+div {
+    background-color:#FFFFFF;
+}
+
+/* Put border above container by pushing it down a little */
+div.container {
+    position: relative;
+    top: 20px;
+}
+
+/* This prevents lingering dotted outline under firefox */
+a:focus {
+    outline: 0;
+}
+
+/*
+ * Header
+ */
+
+div.header {
+    background-color: #4C88BE;
+    padding:4px 4px 4px;
+    text-align:right;
+}
+
+div.header h1 {
+    color:#ffffff;
+}
+
+div.header h1 span.gray {
+    color: #C0C0C0;
+}
+
+div.header h2.slogan {
+    color:#d0d0d0;
+}
+
+div.header a {
+    color:#ffffff;
+    text-decoration: none;
+}
+
+div.header a:hover {
+    text-decoration: underline;
+}
+
+/*
+ * Menubar
+ */
+div.menubar {
+    padding-bottom: 8px;
+}
+
+ul.menubar {
+    background-color: #4C88BE;
+    float:right;
+    width:100%;
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+ul.menubar a {
+    float:right;
+    width:6em;
+    text-decoration:none;
+    color:white;
+    background-color: #4C88BE;
+    padding:0.2em 0.6em;
+    border-top:1px solid white;
+    border-left:1px solid white;
+}
+ul.menubar a:hover {
+    background-color:#B0E0E6;
+    color: black;
+}
+ul.meubar li {
+    display:inline;
+}
+
+/*
+ * Sidebar
+ */
+
+div.sidebar {
+    padding: 15px 4px 4px;
+}
+
+div.sidebar h1 {
+    background: #B0C4DE;
+    color: #00477F;
+    font-size:1.5em;
+    margin-top: 5px;
+}
+
+ul.sidemenu {
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0px 0px;
+    width: 100%;
+}
+
+ul.sidemenu li.header  {
+    background: #B0C4DE;
+    color: #00477F;
+    font-size:1.4em;
+}
+
+/* Don't change header on hover */
+ul.sidemenu li.header:hover  {
+    background: #B0C4DE;
+}
+
+ul.sidemenu li {
+    background-color: #4C88BE;
+    display: block;
+    font-size: 1.2em;
+    margin: 2px;
+    padding: 3px;
+}
+
+ul.sidemenu li a {
+    color: white;
+    /* This display with the width makes the whole li element clickable */
+    display: block;
+    text-decoration: none;
+    width: 100%;
+}
+
+/* Highlight hovered link */
+ul.sidemenu li:hover {
+    background-color: #B0E0E6;
+}
+
+ul.sidemenu li:hover a {
+    color: #00477F;
+}
+
+/*
+ * Content
+ */
+div.content {
+    padding: 15px 15px 8px;
+}
+
+div.content h1 {
+    color: #00477F;
+}
+
+div.content li {
+    padding-bottom: 10px;
+}
+
+div.content a {
+    color: #00477F; 
+    text-decoration: none;
+}
+
+/*
+ * [href] here keeps us from underlining a:name elements
+ * Works better than :link, which causes Safari to missing some elements.
+ */
+div.content a[href]:hover {
+    text-decoration: underline;
+}
+
+div.content strong {
+    color: #00477F;
+}
+
+/*
+ * Footer
+ */
+div.footer {
+    background-color: #4C88BE;
+    color:#d0d0d0;
+    font-size: 1em;
+    padding: 10px 4px 4px;
+    text-align:center;
+}
+
+div.footer p {
+    margin: 2px;
+    paddiing: 0px 0px;
+}
+
+div.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+div.footer a:hover {
+    text-decoration: underline;
+}
+
+/*
+ * Specific elements
+ */
+.copyright {
+    color: white;
+    font-size: 1em;
+    padding: 0;
+}
+
+.head-shot {
+    float: right;
+    height: 250px;
+    padding: 6px;
+}
+
+/*
+ * Table for image gallery
+ */
+table.images {
+    table-layout: fixed;
+    width: 100%;
+}
+
+table.images td {
+    background: #E0E0E0;
+    text-align: center;
+}
+
+table.images td img {
+    width: 100%;
+}
+
+/* Dog footer */
+div#dog-footer {
+    clear: both;
+    text-align: center;
+}
+
+div#dog-footer img {
+    border: 0;
+}
+
+/* Image formatting */
+div.figure {
+    width: 33%;
+    border: thin silver solid;
+    margin: 0.2em;
+    padding: 0.2em;
+    background: #E0E0E0;
+}
+
+div.figure-right {
+    float: right;
+    clear: both;
+}
+
+div.figure-left {
+    float: left;
+    clear: both;
+}
+
+div.figure-float {
+    height: 30%;
+    float: left;
+}
+
+div.figure p {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+}
+
+div.figure img {
+    width: 100%;
+}
+
+/*
+ * XMas tables
+ */
+table.xmas {
+    border-collapse:collapse;
+    width: 80%;
+}
+
+table.xmas td {
+    border: 1px solid black;
+}
+
+/* Publications page */
+div.pubs {
+    clear: both;
+}
+
+div.pubs h1 {
+    font-size: 2.0em;
+}
+
+div.pubs h2 {
+    font-size: 1.6em;
+}
+
+div#pubs-menu {
+    clear: both;
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+
+div#pubs-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+div#pubs-menu li a {
+    padding: 0 8px;
+    color: #4F82CB;
+}
+
+div#pubs-menu li a:hover {
+    padding: 0 8px;
+    color: #4F82CB;
+}
+
+/* Override inheriting color because it is a <a name> element */
+span.author {
+    color: black;
+}
+
+/* 404 page */
+div#notfound {
+	text-align: center;
+}
+
+div#notfound p.url {
+	font-weight: bold;
+}
+
+/* Google search box */
+form.search input[type=text] {
+	border: solid thin #000000;
+}
+
+form.search input[type=submit] {
+	border: solid thin #88ac0b;
+}
+
+/* Error page */
+div#error {
+	text-align: center;
+}
+
+p#errorMessage {
+	font-weight: bold;
+}
+
+/* Homepage menu */
+ul.homemenu {
+    list-style-type: none;
+    /* Given sidebar, this centers our list */
+    margin-left: 39%;
+    text-align: center;
+    width: 30em;
+}
+
+ul.homemenu li {
+    background-color: #4C88BE;
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+}
+
+ul.homemenu a {
+    color: white;
+    /* This display with the width makes the whole li element clickable */
+    display: block;
+    font-size: 3em;
+    text-decoration: none;
+    width: 100%;
+}
+
+/* Highlight hovered link */
+ul.homemenu li:hover {
+    background-color: #B0E0E6;
+}
+
+ul.homemenu li:hover a {
+    color: #00477F;
+    text-decoration: none;
+}
+
+/* Need to use [href] here to override div.content css */
+ul.homemenu li a[href]:hover {
+    text-decoration: none;
+}
+
+
